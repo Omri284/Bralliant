@@ -91,7 +91,7 @@ public class Bluetooth {
     public void turnOnBTAdapter(){
         mBTAdapter.enable();
     }
-
+dsdsfsg
     public void searchDevice() {
         if (mBTAdapter.isEnabled()) {
             scanLeDevice(true);
