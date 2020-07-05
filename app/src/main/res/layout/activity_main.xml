@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layoutDirection="ltr"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -118,6 +119,7 @@
                         android:layout_height="wrap_content"
                         android:contentDescription="TODO"
                         android:cropToPadding="false"
+                        android:visibility="invisible"
                         app:srcCompat="@drawable/lcircle" />
 
                     <TextView
@@ -127,7 +129,8 @@
                         android:background="#FFFFFF"
                         android:gravity="center"
                         android:text="0:30 AM"
-                        android:textSize="36sp" />
+                        android:textSize="36sp"
+                        android:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/R0"
@@ -159,6 +162,7 @@
                         android:layout_height="wrap_content"
                         android:contentDescription="TODO"
                         android:cropToPadding="false"
+                        android:visibility="visible"
                         app:srcCompat="@drawable/lcircle" />
 
                     <TextView
@@ -168,12 +172,14 @@
                         android:background="#FFFFFF"
                         android:gravity="center"
                         android:text="9:20 PM, 22 min"
-                        android:textSize="24sp" />
+                        android:textSize="24sp"
+                        android:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/R1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:visibility="invisible"
                         app:srcCompat="@drawable/rcircle" />
                 </LinearLayout>
 
@@ -183,7 +189,8 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="2h 45min"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:visibility="visible" />
 
                 <LinearLayout
                     android:id="@+id/layoutTime2"
@@ -198,6 +205,7 @@
                         android:layout_height="wrap_content"
                         android:contentDescription="TODO"
                         android:cropToPadding="false"
+                        android:visibility="invisible"
                         app:srcCompat="@drawable/lcircle" />
 
                     <TextView
@@ -207,12 +215,14 @@
                         android:background="#FFFFFF"
                         android:gravity="center"
                         android:text="6:35 PM, 30 min"
-                        android:textSize="24sp" />
+                        android:textSize="24sp"
+                        android:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/R2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:visibility="visible"
                         app:srcCompat="@drawable/rcircle" />
                 </LinearLayout>
 
@@ -222,7 +232,8 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="3h 49min"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:visibility="visible" />
 
                 <LinearLayout
                     android:id="@+id/layoutTime3"
@@ -237,6 +248,7 @@
                         android:layout_height="wrap_content"
                         android:contentDescription="TODO"
                         android:cropToPadding="false"
+                        android:visibility="visible"
                         app:srcCompat="@drawable/lcircle" />
 
                     <TextView
@@ -246,12 +258,14 @@
                         android:background="#FFFFFF"
                         android:gravity="center"
                         android:text="2:46 PM, 16 min"
-                        android:textSize="24sp" />
+                        android:textSize="24sp"
+                        android:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/R3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:visibility="invisible"
                         app:srcCompat="@drawable/rcircle" />
                 </LinearLayout>
 
@@ -283,7 +297,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Connect" />
+                    android:text="Connect"
+                    android:visibility="gone" />
             </LinearLayout>
 
         </LinearLayout>

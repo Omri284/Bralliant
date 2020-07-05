@@ -12,7 +12,7 @@ import android.view.View;
 import java.net.MalformedURLException;
 
 public class SplashScreenActivity extends AppCompatActivity {
-    private static int SPLASH_TIME_OUT = 2000;
+    private static int SPLASH_TIME_OUT = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,17 +28,3 @@ public class SplashScreenActivity extends AppCompatActivity {
         },SPLASH_TIME_OUT);
     }
 }
-
-//
-//    EasySplashScreen config = new EasySplashScreen(SplashScreenActivity.this)
-//            .withFullScreen()
-//            .withTargetActivity(MainActivity.class)
-//            .withSplashTimeOut(5000)
-//            .withBackgroundColor(Color.parseColor("#FFFFFF"))
-//            .withAfterLogoText("Breastfeeding with peace of mind")
-//            .withLogo(R.drawable.bralliantlogo);
-//
-//        config.getAfterLogoTextView().setTextColor(Color.parseColor("#FFC0CB"));
-//
-//                View easySplashScreen = config.create();
-//                setContentView(easySplashScreen);
